@@ -41,6 +41,6 @@ class NotesController extends Controller
     {
         $note = Note::findOrFail($id);
         
-        return view('notes.show')->with(compact('note'));
+        return view('notes.details')->with(compact('note'));
     }
 }
